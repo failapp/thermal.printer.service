@@ -9,6 +9,10 @@ COPY . .
 
 RUN npm install
 
+
+ENV TZ=America/Santiago
+ENV PRINTER_INTERFACE=/dev/usb/lp0
+
 #RUN chown -R app /opt/app
 #USER app
 
